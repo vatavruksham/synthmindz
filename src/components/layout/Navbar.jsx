@@ -6,7 +6,7 @@ import HashLink from '../ui/HashLink';
 
 const navLinks = [
   { to: '/features', label: 'Features' },
-  { to: '/#demo', label: 'Try Demo', hash: true },
+  { to: '/#demo', label: 'Try AI Demo', hash: true },
   { to: '/#how-it-works', label: 'How It Works', hash: true },
   { to: '/pricing', label: 'Pricing' },
 ];

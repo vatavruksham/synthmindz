@@ -55,8 +55,7 @@ export default function Hero() {
 
           <AnimateOnScroll animation="fadeUp" delay={80}>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-display text-ink leading-tight mb-5">
-              AI content strategy on a{' '}
-              <span className="text-primary-dark">collaborative canvas</span>
+              Turn every content plan into a growth strategy with AI
             </h1>
           </AnimateOnScroll>
 
@@ -70,7 +69,7 @@ export default function Hero() {
           <AnimateOnScroll animation="fadeUp" delay={240}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/#demo" size="lg" variant="primary">
-                Build a Strategy
+                AI Trial
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button href="/pricing" size="lg" variant="secondary">
