@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-50 text-ink font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-ink;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary-dark to-accent bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary to-accent;
+  }
+
+  .btn-glow {
+    position: relative;
+    box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 8px 28px rgba(13, 148, 136, 0.45);
+  }
+
+  /* Soft canvas panel — workshop board feel */
+  .glass {
+    @apply border border-surface-200 bg-white/90 backdrop-blur-sm;
+    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  /* Whiteboard grid atmosphere */
+  .canvas-grid {
+    background-color: #f4f7fb;
+    background-image:
+      linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .sticky-note {
+    @apply shadow-sticky rounded-sm border border-black/5;
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
