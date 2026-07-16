@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, Brain } from 'lucide-react';
 import Button from '../ui/Button';
 import AnimateOnScroll from '../ui/AnimateOnScroll';
 
@@ -12,13 +12,11 @@ const stickyNotes = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden canvas-grid min-h-[min(92vh,820px)] flex items-center py-16 lg:py-24">
-      {/* Soft atmospheric washes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-32 right-0 w-[480px] h-[480px] rounded-full bg-primary/8 blur-3xl" />
         <div className="absolute bottom-0 -left-20 w-[360px] h-[360px] rounded-full bg-accent/10 blur-3xl" />
       </div>
 
-      {/* Full-bleed strategy board sticky notes */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         {stickyNotes.map((note) => (
           <div
@@ -38,7 +36,6 @@ export default function Hero() {
             </p>
           </div>
         ))}
-        {/* Connecting lines suggestion */}
         <svg className="absolute inset-0 w-full h-full opacity-[0.12]" xmlns="http://www.w3.org/2000/svg">
           <line x1="22%" y1="28%" x2="78%" y2="32%" stroke="#0f172a" strokeWidth="1" strokeDasharray="6 8" />
           <line x1="25%" y1="68%" x2="75%" y2="72%" stroke="#0f172a" strokeWidth="1" strokeDasharray="6 8" />
@@ -48,29 +45,34 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center max-w-3xl mx-auto">
           <AnimateOnScroll animation="fadeUp">
-            <p className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-ink tracking-tight mb-5">
-              SynthMindz
-            </p>
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-white/80 px-4 py-1.5 text-sm font-semibold text-primary-dark backdrop-blur">
+              <Sparkles className="h-4 w-4" aria-hidden="true" />
+              AI Content Strategy Platform
+            </span>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fadeUp" delay={80}>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-display text-ink leading-tight mb-5">
-              Turn every content plan into a growth strategy with AI
+            <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl lg:text-6xl leading-tight">
+              Build Smarter{' '}
+              <span className="gradient-text">Content Growth Strategies With AI</span>
             </h1>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fadeUp" delay={160}>
-            <p className="text-base lg:text-lg text-ink-soft leading-relaxed max-w-xl mx-auto mb-9">
-              Build pillars, calendars, competitor gaps, and SEO briefs in one
-              strategy board — the workshop wall your team actually ships from.
+            <p className="mt-6 text-base lg:text-lg text-ink-soft leading-relaxed max-w-xl mx-auto">
+              Build pillars, editorial calendars, competitor gaps, and SEO briefs on
+              one collaborative strategy board — the workshop wall your team ships from.
             </p>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fadeUp" delay={240}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/#demo" size="lg" variant="primary">
-                AI Trial
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <span className="inline-flex items-center gap-2">
+                  <Brain className="h-4 w-4" aria-hidden="true" />
+                  AI Trial
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </span>
               </Button>
               <Button href="/pricing" size="lg" variant="secondary">
                 View Pricing
