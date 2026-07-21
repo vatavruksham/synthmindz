@@ -91,7 +91,7 @@ export default function Pricing() {
                   variant={plan.highlighted ? 'primary' : 'secondary'}
                   className="w-full"
                 >
-                  Get Started
+                  BUY NOW
                 </Button>
               </div>
             </AnimateOnScroll>

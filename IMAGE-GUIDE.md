@@ -1,42 +1,21 @@
 # SynthMindz — Image Guide
 
 ## Concept
-SynthMindz is an AI Content Strategy Platform. All images should relate to strategy workshops, collaborative canvases, sticky-note boards, editorial planning, competitor research, marketing analytics, and content teams at work — NOT video production or scriptwriting.
+SynthMindz is an AI Content Strategy Platform. Feature art should feel light, teal/orange, workshop-board / strategy symbolism — not office lifestyle stock.
 
-## Unsplash Search Terms
-- "strategy workshop whiteboard"
-- "sticky notes brainstorming"
-- "content marketing team"
-- "editorial calendar planning"
-- "marketing analytics dashboard"
-- "collaborative planning session"
-- "competitor analysis research"
-- "content strategy meeting"
-- "kanban board planning"
-- "creative workshop mural"
+## Image Rules (REQUIRED)
+- Do NOT bake feature titles, headlines, taglines, or marketing sentences into images.
+- Prefer symbolic / product visuals; page copy carries the words.
+- No generic Unsplash meeting/laptop stock for features.
+- Hero stays as the sticky-note workshop atmosphere (code UI), not a reused feature image.
 
-## Feature Images (used on /features page)
-1. AI Strategy Builder → "business strategy analytics" (planning/dashboard)
-2. Competitor Intelligence → "data analytics charts" (competitive insights)
-3. Editorial Calendar → "project planning calendar" (scheduling)
-4. Content Brief Generator → "team meeting briefing" (briefs & collaboration)
-5. SEO Optimization Engine → "SEO search analytics" (search/data)
-6. Performance Analytics → "marketing performance dashboard" (metrics)
+## Feature Images (local `/public/images/features/`)
+1. AI Strategy Builder → neural brain → strategy board (`ai-strategy-builder.jpg`)
+2. Competitor Intelligence → twin radar spheres (`competitor-intelligence.jpg`)
+3. Editorial Calendar → frosted glass calendar grid (`editorial-calendar.jpg`)
+4. Content Brief Generator → translucent brief stack (`content-brief-generator.jpg`)
+5. SEO Optimization Engine → magnifier + ranking orbs (`seo-optimization.jpg`)
+6. Performance Analytics → abstract charts without labels (`performance-analytics.jpg`)
 
-## Avatar Images
-- Team members: DiceBear notionists style
-  - `https://api.dicebear.com/7.x/notionists/svg?seed=AlexRivera`
-  - `https://api.dicebear.com/7.x/notionists/svg?seed=SarahKim`
-  - `https://api.dicebear.com/7.x/notionists/svg?seed=MarcusHayes`
-  - `https://api.dicebear.com/7.x/notionists/svg?seed=JessicaMoore`
-
-## AI Generation Prompts (Midjourney/DALL-E)
-- Hero area: "Collaborative content strategy workshop wall with colorful sticky notes for pillars audience channels calendar, soft cool white canvas, teal and coral accents, photorealistic"
-- Features background: "Top-down view of marketing strategy board with sticky notes, editorial calendar, competitor gap map, natural daylight, photorealistic"
-
-## Notes
-- All images served from Unsplash CDN via URL parameters (w=600&q=80)
-- DiceBear avatars are SVG and load instantly
-- No local image downloads needed — using CDN for both
-- For production: download all images locally to /public/images/
-- Visual identity: cool canvas `#f4f7fb`, teal `#0d9488`, coral `#f97316` — avoid indigo/purple AI clichés
+## Avatars
+- DiceBear notionists: `https://api.dicebear.com/7.x/notionists/svg?seed=NAME`
