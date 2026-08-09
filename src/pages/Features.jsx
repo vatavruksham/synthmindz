@@ -6,8 +6,7 @@ import Button from '../components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 
 export default function Features() {
-  useDocumentTitle(
-    'Features',
+  useDocumentTitle('Features',
     "Explore SynthMindz's AI content strategy features — strategy builder, competitor intelligence, editorial calendars, content briefs, SEO optimization, and performance analytics."
   );
 

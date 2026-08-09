@@ -3,8 +3,7 @@ import AnimateOnScroll from '../components/ui/AnimateOnScroll';
 import SectionHeading from '../components/ui/SectionHeading';
 
 export default function Terms() {
-  useDocumentTitle(
-    'Terms of Service',
+  useDocumentTitle('Terms of Service',
     'SynthMindz terms of service — usage guidelines and service agreement.'
   );
 

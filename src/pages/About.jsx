@@ -4,8 +4,7 @@ import AnimateOnScroll from '../components/ui/AnimateOnScroll';
 import SectionHeading from '../components/ui/SectionHeading';
 
 export default function About() {
-  useDocumentTitle(
-    'About',
+  useDocumentTitle('About',
     "Learn about SynthMindz's mission to bring AI-powered content strategy boards to every marketing team."
   );
 

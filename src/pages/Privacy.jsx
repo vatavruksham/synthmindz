@@ -3,8 +3,7 @@ import AnimateOnScroll from '../components/ui/AnimateOnScroll';
 import SectionHeading from '../components/ui/SectionHeading';
 
 export default function Privacy() {
-  useDocumentTitle(
-    'Privacy Policy',
+  useDocumentTitle('Privacy Policy',
     'SynthMindz privacy policy — how we collect, use, and protect your data.'
   );
 

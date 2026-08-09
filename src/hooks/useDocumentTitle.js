@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 
-const DEFAULT_TITLE = 'SynthMindz — AI Content Strategy Platform';
+const DEFAULT_TITLE = 'SynthMindz - AI Content Strategy Platform';
 
 export default function useDocumentTitle(title, description) {
   useEffect(() => {
     const previousTitle = document.title;
 
-    document.title = title ? `${title} | SynthMindz` : DEFAULT_TITLE;
+    document.title = title ? `${title} - SynthMindz` : DEFAULT_TITLE;
 
     let metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription

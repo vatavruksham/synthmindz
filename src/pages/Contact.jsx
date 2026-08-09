@@ -7,8 +7,7 @@ import Input from '../components/ui/Input';
 import { validateEmail } from '../utils/validation';
 
 export default function Contact() {
-  useDocumentTitle(
-    'Contact',
+  useDocumentTitle('Contact',
     'Get in touch with the SynthMindz team for support, partnerships, or general inquiries.'
   );
 

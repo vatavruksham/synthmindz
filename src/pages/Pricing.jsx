@@ -33,8 +33,7 @@ function FAQItem({ question, answer }) {
 }
 
 export default function Pricing() {
-  useDocumentTitle(
-    'Pricing',
+  useDocumentTitle('Pricing',
     'SynthMindz pricing plans — Starter, Growth, and Agency tiers for AI content strategy teams.'
   );
 
