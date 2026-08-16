@@ -115,7 +115,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 border-t border-surface-200 pt-8 text-center">
           <p className="text-sm text-ink-muted">
-            © 2026 SynthMindz. All rights reserved.
+            Copyright © SynthMindz 2026 All Rights Reserved.
           </p>
         </div>
       </div>
